@@ -5,9 +5,9 @@
 
 /* Page Colors */
 :root {
-	--red: #CC2E2E;
-	--black: #1A1A1A;
-	--backlight: #e7e7e7;
+    --red: #CC2E2E;
+    --black: #1A1A1A;
+    --backlight: #e7e7e7;
     --bgtext: #646d74;
     --bglight: #868686;
 }
@@ -33,25 +33,25 @@ header {
 
 
 .header-ident {
-  overflow: auto;
+    overflow: auto;
 }
 
-.header-ident img{
-	max-width: 100%;
-  float: left;
-  margin: 0 10px 0 0;
+.header-ident img {
+    max-width: 100%;
+    float: left;
+    margin: 0 10px 0 0;
 }
 
 
 .header-ident h1 {
-    display:inline-block;
-	color: var(--black);
+    display: inline-block;
+    color: var(--black);
     background-color: var(--red);
     padding: 1px 3% 5px 3%;
     margin: 0;
-    font-size: 3.5vw;
-	width: 400px;
-	
+    font-size: 60px;
+    width: 500px;
+
 }
 
 nav {
@@ -69,8 +69,8 @@ nav a {
     background-repeat: no-repeat;
     background-size: 100% .20em;
     background-position: bottom;
-	transition: all .3s ease-in;
-    font-size: 2vw;
+    transition: all .3s ease-in;
+    font-size: 30px;
 }
 
 nav a:hover {
@@ -97,7 +97,7 @@ nav a:hover {
     padding: 1px 5px;
     line-height: 2;
     display: inline;
- 
+
 }
 
 .profile-pic {
@@ -106,7 +106,7 @@ nav a:hover {
     padding: 30px;
     width: 350px;
     height: 300px;
-	
+
 }
 
 #border-pic {
@@ -125,7 +125,7 @@ nav a:hover {
     justify-content: space-between;
 }
 
-/* all h2 headers with class page sidel */
+/* all h2 headers with class page leftbar */
 .page-leftbar>h2 {
     flex: 0 0 15%;
     text-align: right;
@@ -136,7 +136,7 @@ nav a:hover {
     line-height: 1.5;
 }
 
-/* applies to all div with class page sidel */
+/* applies to all div with class leftbar */
 .page-leftbar>div {
     flex: 0 0 80%;
 }
@@ -187,11 +187,11 @@ nav a:hover {
 }
 
 .flex-pics:hover {
-    background-color: rgba(86,86,86,1.00);
+    background-color: rgba(86, 86, 86, 1.00);
 }
 
 h3 {
-	color:black;
+    color: black;
 }
 
 /* work section pictures */
@@ -218,7 +218,7 @@ h3 {
 /* Contact Section */
 .page-leftbar address {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 200px;
@@ -238,28 +238,30 @@ h3 {
 
 .page-leftbar address a:hover {
     background-size: 100% 100%;
-    color: var(--bglight);
+    color: var(--red);
 }
 
 
 footer {
-	background-color: black;
-	height: 50px;
-	color: white;
-	text-align: center;
-	padding:20px;
+    background-color: black;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding: 20px;
 
 }
+
 /* to do add all media query information */
 @media screen and (max-width: 768px) {
     header {
         padding: 0 0 10px 0;
         justify-content: center;
         text-align: center;
-	}
+    }
+
     header h1 {
         width: 100%;
-        padding:10px;
+        padding: 10px;
         margin-bottom: 20px;
         font-size: 30px;
     }
@@ -267,164 +269,174 @@ footer {
     header nav {
         justify-content: center;
     }
-		.header-ident h1 {
-    display:inline-block;
-	color: var(--black);
-    background-color: var(--red);
-    padding: 1px 3% 5px 3%;
-    margin: 0;
-    font-size: 5vw;
-	width: 300px;
-	
-}
-	nav a {
-    text-decoration: none;
-    padding: 5px 10px;
-    color: var(--red);
-    margin-right: 8px;
-    background-image: linear-gradient(0deg, var(--red) 0%, var(--red) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% .20em;
-    background-position: bottom;
-	transition: all .3s ease-in;
-    font-size: 4vw;
-}
-	
-	.hero-image {
-		display: none;
-	}
-	
-	.header-ident img{
-		display:none;
-	}
 
-	.flex-pics {
-    display: flex;
-    align-items: flex-end;
-    max-height: 350px;
-    flex-basis: calc(50% - 40px);
-    background-size: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 20px;
-    padding: 5px 5px 20px 5px;
-    text-decoration: none;
-    border: 6px solid var(--bglight);
-    color: var(--bgtext);
-    transition: all 0.5s;
-    background-blend-mode: soft-light;
-    background-color: var(--bgtext);
-	flex-wrap: wrap;
-}
+    .header-ident h1 {
+        display: inline-block;
+        color: var(--black);
+        background-color: var(--red);
+        padding: 1px 3% 5px 3%;
+        margin: 0;
+        font-size: 5vw;
+        width: 300px;
 
-	.flex-parent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-	
-.flex-pics:first-child {
+    }
 
-    flex-basis: 100%;
-	
-	}
-    .page-leftbar > h2, 
-    .page-leftbar > div {
+    nav a {
+        text-decoration: none;
+        padding: 5px 10px;
+        color: var(--red);
+        margin-right: 8px;
+        background-image: linear-gradient(0deg, var(--red) 0%, var(--red) 100%);
+        background-repeat: no-repeat;
+        background-size: 100% .20em;
+        background-position: bottom;
+        transition: all .3s ease-in;
+        font-size: 4vw;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .header-ident img {
+        display: none;
+    }
+
+    .flex-pics {
+        display: flex;
+        align-items: flex-end;
+        max-height: 350px;
+        flex-basis: calc(50% - 40px);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 20px;
+        padding: 5px 5px 20px 5px;
+        text-decoration: none;
+        border: 6px solid var(--bglight);
+        color: var(--bgtext);
+        transition: all 0.5s;
+        background-blend-mode: soft-light;
+        background-color: var(--bgtext);
+        flex-wrap: wrap;
+    }
+
+    .flex-parent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flex-pics:first-child {
+
+        flex-basis: 100%;
+
+    }
+
+    .page-leftbar>h2,
+    .page-leftbar>div {
         flex: 0 0 100%;
     }
 
-    .page-leftbar > h2{
+    .page-leftbar>h2 {
         border-right: none;
         margin-bottom: 5px;
         padding-bottom: 3px;
-        text-align: center;   
-        font-size: 7vw; 
+        text-align: center;
+        font-size: 7vw;
     }
-    .page-leftbar{
+
+    .page-leftbar {
         width: 100%;
     }
-    .flex-parent{
-        display:flex;
+
+    .flex-parent {
+        display: flex;
         width: 100%;
     }
-    .Project1{
+
+    .Project1 {
         width: 100%;
-        height:100vh;
+        height: 100vh;
     }
 
-    
+
 }
-@media (max-width: 1200px){
-}
+
+@media (max-width: 1200px) {}
 
 
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
 
-	.header-ident h1 {
-    display:inline-block;
-	color: var(--black);
-    background-color: var(--red);
-    padding: 1px 3% 5px 3%;
-    margin: 0;
-    font-size: 12vw;
-	width: 300px;
-	
-}
-	nav a {
-    text-decoration: none;
-    padding: 5px 10px;
-    color: var(--red);
-    margin-right: 8px;
-    background-image: linear-gradient(0deg, var(--red) 0%, var(--red) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% .20em;
-    background-position: bottom;
-	transition: all .3s ease-in;
-    font-size: 10vw;
-}
-	
-	.flex-pics:first-child {
-	max-height: 200px;
-    flex-basis: 100%;
-	
-	}
-	.flex-pics {
-    display: flex;
-    align-items: flex-end;
-	flex-wrap: wrap;
-    min-height: 150px;
-    max-height: 350px;
-    flex-basis: calc(50% - 40px);
-    background-size: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 10px;
-    padding: 5px 5px 10px 5px;
-    text-decoration: none;
-    border: 6px solid var(--bglight);
-    color: var(--bgtext);
-    transition: all 0.5s;
-    background-blend-mode: soft-light;
-    background-color: var(--bgtext);
-	
-}
-	.page-leftbar address {
-    display: flex;
-	flex-direction: column;
-    
-	}
-	.page-leftbar address a {
-    text-decoration: none;
-    padding: 5px 20px;
-    color: var(--black);
-    background-image: linear-gradient(0deg, var(--black) 0%, var(--black) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% .20em;
-    background-position: bottom;
-    transition: all .3s ease-in;
-    font-size: 7vw;
-	
-}
+    .header-ident h1 {
+        display: inline-block;
+        color: var(--black);
+        background-color: var(--red);
+        padding: 1px 3% 5px 3%;
+        margin: 0;
+        font-size: 12vw;
+        width: 300px;
+
+    }
+
+    nav a {
+        text-decoration: none;
+        padding: 5px 10px;
+        color: var(--red);
+        margin-right: 8px;
+        background-image: linear-gradient(0deg, var(--red) 0%, var(--red) 100%);
+        background-repeat: no-repeat;
+        background-size: 100% .20em;
+        background-position: bottom;
+        transition: all .3s ease-in;
+        font-size: 20px;
+    }
+
+    .flex-pics:first-child {
+        max-height: 200px;
+        flex-basis: 100%;
+
+    }
+
+    .flex-pics {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        min-height: 150px;
+        max-height: 350px;
+        flex-basis: calc(50% - 40px);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 10px;
+        padding: 5px 5px 10px 5px;
+        text-decoration: none;
+        border: 6px solid var(--bglight);
+        color: var(--bgtext);
+        transition: all 0.5s;
+        background-blend-mode: soft-light;
+        background-color: var(--bgtext);
+
+    }
+
+    .page-leftbar address {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .page-leftbar address a {
+        text-decoration: none;
+        padding: 5px 20px;
+        color: var(--black);
+        background-image: linear-gradient(0deg, var(--black) 0%, var(--black) 100%);
+        background-repeat: no-repeat;
+        background-size: 100% .20em;
+        background-position: bottom;
+        transition: all .3s ease-in;
+        font-size: 7vw;
+
+    }
 
 }
