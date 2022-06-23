@@ -1,168 +1,430 @@
+/* Universal Selectors */
+* {
+    box-sizing: border-box;
+}
+
+/* Page Colors */
+:root {
+	--red: #CC2E2E;
+	--black: #1A1A1A;
+	--backlight: #e7e7e7;
+    --bgtext: #646d74;
+    --bglight: #868686;
+}
+
 body {
-    margin: 0;
+    margin: 1px;
     padding: 0;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	background-color:lightgrey;
-}
-title-img{
-	float:left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+    background-color: var(--backlight);
+    line-height: 1.25;
 }
 
-
-#navigation-container {
-    position: relative;
-    background-color: #1A1A1A;
+header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    padding: 15px 20px 15px 0;
+}
+
+
+.header-ident {
+  overflow: auto;
+}
+
+.header-ident img{
+	max-width: 100%;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+
+.header-ident h1 {
+    display:inline-block;
+	color: var(--black);
+    background-color: var(--red);
+    padding: 1px 3% 5px 3%;
+    margin: 0;
+    font-size: 3.5vw;
+	width: 400px;
+	
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--red);
+    margin-right: 8px;
+    background-image: linear-gradient(0deg, var(--red) 0%, var(--red) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .20em;
+    background-position: bottom;
+	transition: all .3s ease-in;
+    font-size: 2vw;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--black);
+}
+
+.hero-image {
+    background: #565656;
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    min-height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.hero-image h2 {
+    font-size: 30px;
+    background-color: var(--red);
+    color: var(--black);
+    padding: 1px 5px;
+    line-height: 2;
+    display: inline;
+ 
+}
+
+.profile-pic {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 350px;
+    height: 300px;
+	
+}
+
+#border-pic {
+    border: 10px solid grey;
+    padding: 5px;
+}
+
+/* parent class selectors */
+.page-leftbar {
+    margin: 15px 5px;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
     justify-content: space-between;
 }
 
-.title-name {
-	position: absolute;
-	left:90px;
-	color: white	
-
+/* all h2 headers with class page sidel */
+.page-leftbar>h2 {
+    flex: 0 0 15%;
+    text-align: right;
+    padding-right: 20px;
+    border-right: 5px solid var(--black);
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.5;
 }
 
-ul {
+/* applies to all div with class page sidel */
+.page-leftbar>div {
+    flex: 0 0 80%;
+}
+
+.page-leftbar p {
+    margin: 30px 40px;
+    padding: 20px 20px;
+    font-size: 20px;
+    color: var(--black);
+}
+
+
+/* flex properties for work pictures */
+.flex-parent {
     display: flex;
-    flex-direction: row;
-    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-a {
+.flex-pics {
+    display: flex;
+    align-items: flex-end;
+    min-height: 150px;
+    max-height: 350px;
+    flex-basis: calc(50% - 40px);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    padding: 5px 5px 20px 5px;
     text-decoration: none;
-    color: #FFFFFF;
-    font-size: 16px;
-    padding: 5px 15px;
-    opacity: 0.7;
+    border: 6px solid var(--bglight);
+    color: var(--bgtext);
+    transition: all 0.5s;
+    background-blend-mode: soft-light;
+    background-color: var(--bgtext)
 }
 
-li {
+.flex-pics:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+
+}
+
+.flex-pics div {
+    background-color: var(--bglight);
+    padding: 15px 10px;
+}
+
+.flex-pics:hover {
+    background-color: rgba(86,86,86,1.00);
+}
+
+h3 {
+	color:black;
+}
+
+/* work section pictures */
+.Project1 {
+    background-image: url("../images/blue-placeholder.jpg");
+}
+
+.Project2 {
+    background-image: url("../images/gradient-placeholder.jpg");
+}
+
+.Project3 {
+    background-image: url("../images/grey-placeholder.jpg");
+}
+
+.Project4 {
+    background-image: url("../images/blue-grey-placeholder.jpg");
+}
+
+.Project5 {
+    background-image: url("../images/red-placeholder.jpg");
+}
+
+/* Contact Section */
+.page-leftbar address {
     display: flex;
-    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
     align-items: center;
+    height: 200px;
 }
 
-hr.barsep {
- border-top: 8px
-
-}
-.masthead {
- position: relative;
-
-
-}
-
-.masthead img {
-	width:100%;
-	overflow: hidden;
+.page-leftbar address a {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: var(--black);
+    background-image: linear-gradient(0deg, var(--black) 0%, var(--black) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .20em;
+    background-position: bottom;
+    transition: all .3s ease-in;
+    font-size: 25px;
 }
 
+.page-leftbar address a:hover {
+    background-size: 100% 100%;
+    color: var(--bglight);
+}
 
-.masthead span {
-	position:absolute;
-	right: 10px;
-	bottom: 10px;
+
+footer {
+	background-color: black;
+	height: 50px;
 	color: white;
-	font-size: 30px;
-	background-color:#cc2e2e;
-	width:30%;
-	text-align: left;
-	padding: 10px;
+	text-align: center;
+	padding:20px;
+
+}
+/* to do add all media query information */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+	}
+    header h1 {
+        width: 100%;
+        padding:10px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+		.header-ident h1 {
+    display:inline-block;
+	color: var(--black);
+    background-color: var(--red);
+    padding: 1px 3% 5px 3%;
+    margin: 0;
+    font-size: 5vw;
+	width: 300px;
 	
 }
-
-.aboutmecontainer {
-	display: flex;
-	
-	
+	nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--red);
+    margin-right: 8px;
+    background-image: linear-gradient(0deg, var(--red) 0%, var(--red) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .20em;
+    background-position: bottom;
+	transition: all .3s ease-in;
+    font-size: 4vw;
 }
-
-h2 {
-	width:25%;
-	text-align: right;
-	padding: 30px;
-	border-right: 5px solid grey;	
-}
-
-.aboutme-text {
-	width: 75%;
-	padding: 30px;
-	font-display: auto;
-	font-size: 20;
+	
+	.hero-image {
+		display: none;
+	}
+	
+	.header-ident img{
+		display:none;
 	}
 
-.workcontainer {
-	display: flex;
-	width: 100%;
+	.flex-pics {
+    display: flex;
+    align-items: flex-end;
+    max-height: 350px;
+    flex-basis: calc(50% - 40px);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    padding: 5px 5px 20px 5px;
+    text-decoration: none;
+    border: 6px solid var(--bglight);
+    color: var(--bgtext);
+    transition: all 0.5s;
+    background-blend-mode: soft-light;
+    background-color: var(--bgtext);
+	flex-wrap: wrap;
 }
 
-.row {
-	width:100%
+	.flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+	
+.flex-pics:first-child {
+
+    flex-basis: 100%;
+	
+	}
+    .page-leftbar > h2, 
+    .page-leftbar > div {
+        flex: 0 0 100%;
+    }
+
+    .page-leftbar > h2{
+        border-right: none;
+        margin-bottom: 5px;
+        padding-bottom: 3px;
+        text-align: center;   
+        font-size: 7vw; 
+    }
+    .page-leftbar{
+        width: 100%;
+    }
+    .flex-parent{
+        display:flex;
+        width: 100%;
+    }
+    .Project1{
+        width: 100%;
+        height:100vh;
+    }
+
+    
+}
+@media (max-width: 1200px){
 }
 
-.contactmecontainer {
-	display: flex;
-	width: 100%;
-}
-
-
-
-.contactme-ul {
-	width:75%;
-	justify-content: space-around;
-
-}
-
-
-.contactme-li {
-	text-decoration: underline;
-    color: #CC2E2E;
-    font-size: 30px;
-    padding: 30px 15px;
-    opacity: 0.7;
-	font-weight: bold;
-
-}
-
-.footer-cont {
-	background-color:black;
-	width: 100%;
-	height: 50px;
-}
-
-.footer-text {
-	color:white;
-	text-align: center;
-	padding:10px;
-}
-
-
-@media (max-width : 768px ){
-}
 
 
 @media (max-width: 320px){
+
+	.header-ident h1 {
+    display:inline-block;
+	color: var(--black);
+    background-color: var(--red);
+    padding: 1px 3% 5px 3%;
+    margin: 0;
+    font-size: 12vw;
+	width: 300px;
+	
+}
+	nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--red);
+    margin-right: 8px;
+    background-image: linear-gradient(0deg, var(--red) 0%, var(--red) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .20em;
+    background-position: bottom;
+	transition: all .3s ease-in;
+    font-size: 10vw;
+}
+	
+	.flex-pics:first-child {
+	max-height: 200px;
+    flex-basis: 100%;
+	
+	}
+	.flex-pics {
+    display: flex;
+    align-items: flex-end;
+	flex-wrap: wrap;
+    min-height: 150px;
+    max-height: 350px;
+    flex-basis: calc(50% - 40px);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    padding: 5px 5px 10px 5px;
+    text-decoration: none;
+    border: 6px solid var(--bglight);
+    color: var(--bgtext);
+    transition: all 0.5s;
+    background-blend-mode: soft-light;
+    background-color: var(--bgtext);
+	
+}
+	.page-leftbar address {
+    display: flex;
+	flex-direction: column;
+    
+	}
+	.page-leftbar address a {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: var(--black);
+    background-image: linear-gradient(0deg, var(--black) 0%, var(--black) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .20em;
+    background-position: bottom;
+    transition: all .3s ease-in;
+    font-size: 7vw;
+	
 }
 
-
-
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-@media (max-width: 1200px){
 }

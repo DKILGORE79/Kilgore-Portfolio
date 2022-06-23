@@ -1,71 +1,108 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Derek Kilgore</title>
-<link href="assets/css/style.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK Portfoliio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-
-        <div class="navigation-bar">
-        	<div id="navigation-container">
-            <img class="title-img" src="./assets/images/DK logo Design.png" width="70" height="70" alt=""/><h1 class="title-name">Derek Kilgore</h1>
-			  
-			<ul>
-    		  <li><a href="#">Home</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-  	 	</div>
-    <main>
-    	<div class="masthead">
-    		<img src="/assets/images/heropic.png"/>
-    		<span>somekind of quote</span>
+    <!-- Main Header / Nav -->
+    <header>
+		<div class="header-ident">
+       	 <a href="#"><img src="./assets/images/DK logo Design.png" alt="Site Name" /></a> 
+			<h1>Derek Kilgore</h1>
 		</div>
-		
-		<section class="aboutmecontainer">
-		  	<h2>ABOUT ME</h2>
-		  <article class="aboutme-text">Monocle ipsum dolor sit amet asia-Pacific Shinkansen Lufthansa, Scandinavian international conversation joy St Moritz Ginza premium bulletin iconic Fast Lane boutique. Comme des Garçons Fast Lane bureaux, the highest quality remarkable Shinkansen uniforms Lufthansa. Concierge emerging charming K-pop Muji Boeing 787 exclusive espresso bureaux. Sophisticated Shinkansen Toto premium intricate impeccable global alluring</article>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#work">My Work</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#resume">Resume</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-image">
+        <div>
+            <h2>Broadcast Sport Graphic Designer</h2>
+        </div>
+
+        <figure class="profile-pic">
+            <img id="border-pic" src="./assets/images/Herman_Man.jpg" alt="Avatar">
+        </figure>
+
+    </section>
+
+    <main>
+        <!-- About Me -->
+        <section class="page-leftbar" id="about">
+            <h2>About Me</h2>
+            <div>
+                <p>
+                  Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.
+              </p>
+            </div>
         </section>
-		
-		<section class="workcontainer">
-			<h2>WORK</h2>
-				<div class="row"> 
-  					<div class="column">
-						<img src="assets/images/1-637x465.jpg" alt=""/> 
-						<img src="assets/images/2-637x465.jpg" alt=""/>
-						<img src="assets/images/3-637x465.jpg" alt=""/>
-						<img src="assets/images/3-637x465.jpg" alt=""/>
-						<img src="assets/images/5-637x465.jpg" alt=""/> 
-				</div>
-			</div>
-		
-		</section>
-		
-		<section class="contactmecontainer">
-		  <h2>CONTACT ME</h2>
-			<ul>
-			  <li><a class="contactme-li" href="#">816.682.3872</a></li>
-              <li><a class="contactme-li" href="#">derek.kilgore@gmail.com</a></li>
-              <li><a class="contactme-li" href="#">github</a></li>
-              <li><a class="contactme-li" href="#">twitter</a></li>
-			</ul>
-		</section>
-		
-		
-		<footer>
-		 <section class="footer-cont">
-		  <p class="footer-text"> &copy; Derek Kilgore 2022 </p>
-		 </section>
-	 </footer>	  
+        <!-- Work Section with pictures -->
+        <section class="page-leftbar" id="work">
+            <h2>My Work</h2>
+            <div class="flex-parent">
+
+                <a href="#" class="flex-pics Project1">
+                    <div>
+                        <h3>Sample 1</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="flex-pics Project2">
+                    <div>
+                        <h3>Sample 2</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="flex-pics Project3">
+                    <div>
+                        <h3>Sample 3</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="flex-pics Project4">
+                    <div>
+                        <h3>Sample 4</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="flex-pics Project5">
+                    <div>
+                        <h3>Sample 5</h3>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+        <!-- Contact information -->
+        <section class="page-leftbar" id="contact">
+            <h2>Contact Me</h2>
+            <div>
+                <address>
+                    <a href="tel:816-682-3872">816-682-3872</a>
+                    <a href="mailto:derek.kilgore@gmail.com">EMAIL</a>
+                    <a href="https://DKILGORE79.github.io/My-Portfolio/" target="_blank">Github</a>
+                    <a href="https://www.linkdin"
+                        target="_blank">LinkedIn</a>
+                </address>
+            </div>
+        </section>
+
+	  <footer>Copyright &copy; Derek Kilgore 2022</footer>
     </main>
+
+
+
 </body>
+
 </html>
-	
