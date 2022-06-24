@@ -108,8 +108,8 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    width: 350px;
-    height: 300px;
+    width: 500px;
+
 
 }
 
@@ -453,5 +453,10 @@ footer {
         font-size: 7vw;
 
     }
-
+.page-leftbar p {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    font-size: 15px;
+    color: var(--black);
+}
 }
