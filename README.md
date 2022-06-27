@@ -17,7 +17,7 @@ github account https://github.com/DKILGORE79/Kilgore-Portfolio
 
 https://dkilgore79.github.io/Kilgore-Portfolio/
 
-### Build with:
+### Built with:
 
 HTML5 and custom CSS3 with Media Queries
 
@@ -30,18 +30,23 @@ not applicable
 
 Once deployed the application can be viewed in a traditional desktop web browser.
 
+## 1200px
+![Alt text](./assets/images/1200px-snapshot.png "1200px") 
+## 768px
+![Alt text](./assets/images/768px-snapshot.png "768px")
+## 320px
+![Alt text](./assets/images/320px-snapshot.png "320px")
 
-![snapshot] 1200px(./assets/images/1200px-snapshot.png)
-![snapshot] 768px(./assets/images/768px-snapshot.png)
-![snapshot] 320px(./assets/images/320px-snapshot.png)
 ## Credits
 
 tutorials and recourses used
  - https://www.w3schools.com
  - https://developer.mozilla.org/en-US/docs/Web/HTML
- - https://coding-boot-camp.github.io/full-stack/github/professional-readm   e-guide
+ - https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
  - https://blog.hubspot.com/marketing/jump-link-same-page
  - https://www.youtube.com/kepowob
+ - https://www.seancdavis.com/posts/three-ways-to-add-image-to-github-readme/  
+
 
 ## License
 
