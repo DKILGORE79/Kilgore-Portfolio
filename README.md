@@ -1,12 +1,13 @@
 Project #2: Custom CSS and Media Queries Responsive Portfolio
 
 ### Description
-Personal portfolio page design built with HTML / Responsive CSS framework that has "About Me",  "My Work", "Contact Me and a downloadable resume" pages that is aimed to showcase portfolio projects I am working on as well as my contact information.
+Personal portfolio page design built with HTML / Responsive CSS framework. Created to showcase my  portfolio projects I am working on during the bootcamp, as well as my contact information and downloadable resume.
 
 
 ## Tasks completed
     -Has a Menu with About Me, Resume, Contact Me, and Work
-    -Has a Header, About me, Work Gallery, and Contact me sections 
+    -UI scrolls to the selected sections
+    -Links to first completed assignment
     -Responsive design made for 1200px, 768px, 320px sizes
     -Most link are dummies for now till my portfolio starts to grow
     
@@ -28,7 +29,7 @@ not applicable
 
 ## Usage
 
-Once deployed the application can be viewed in a traditional desktop web browser.
+Once deployed the application can be viewed in a traditional desktop web browser, tablet or mobile device.
 
 ## 1200px
 ![Alt text](./assets/images/1200px-snapshot.png "1200px") 

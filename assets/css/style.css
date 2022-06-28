@@ -191,7 +191,7 @@ nav a:hover {
 }
 
 .flex-pics:hover {
-    background-color: rgba(86, 86, 86, 1.00);
+    background-color: rgba(251,107,107,.25);
 }
 /*color of the text for image */
 h3 {
@@ -200,7 +200,7 @@ h3 {
 
 /* work section pictures */
 .Project1 {
-    background-image: url("../images/blue-placeholder.jpg");
+    background-image: url("../images/P1 snapshot.png");
 }
 
 .Project2 {
